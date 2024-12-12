@@ -1,5 +1,20 @@
-
-{
-    "Username": "john",
-    "Password": "cena"
-}
+[
+    {
+        "first name": "a",
+        "last name": "a",
+        "address": "a",
+        "contact_info": "a",
+        "account_type": "a",
+        "password": "a",
+        "balance": 1.0
+    },
+    {
+        "first name": "a",
+        "last name": "a",
+        "address": "a",
+        "contact_info": "a",
+        "account_type": "a",
+        "password": "a",
+        "balance": 1.0
+    }
+]
