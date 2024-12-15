@@ -1,20 +1,12 @@
 [
     {
-        "first name": "a",
-        "last name": "a",
-        "address": "a",
-        "contact_info": "a",
-        "account_type": "a",
+        "account_number": 161856,
+        "first name": "Thomas",
+        "last name": "Pearson",
+        "address": "20 Brambleside",
+        "contact_info": "07368914335",
+        "account_type": "savings",
         "password": "a",
-        "balance": 1.0
-    },
-    {
-        "first name": "a",
-        "last name": "a",
-        "address": "a",
-        "contact_info": "a",
-        "account_type": "a",
-        "password": "a",
-        "balance": 1.0
+        "balance": 10.0
     }
 ]

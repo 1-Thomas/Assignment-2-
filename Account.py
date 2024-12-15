@@ -1,11 +1,16 @@
 import json
+import random
 class account:
     def __init__(self, account_number, account_type, customer_id, balance=0.0):
         self.account_number = account_number
         self.account_type = account_type
         self.customer_id = customer_id
         self.balance = balance
+    
+    
 
+    
+    
     def create_account():
         data = "accounts.json"
         fname = input("Please insert your first name: ")
@@ -13,7 +18,8 @@ class account:
         address = input("Please insert your address: ")
         contact_info = input("Please insert your contact information: ")
         account_type = input("What are you using the account for savings, current or mortgage?): ")
-
+        
+        automatic_account_number = random.randint(100000, 200000)
         
         while True:
             password = input("Enter a password: ")
@@ -28,8 +34,10 @@ class account:
     
 
         balance = float(input("How much would you like to deposit into th account?"))
+        account_number = automatic_account_number
 
         account = {
+            "account_number": account_number,
             "first name": fname,
             "last name": lname,
             "address": address,
@@ -50,7 +58,7 @@ class account:
         with open(data, "w") as file:
             json.dump(accounts, file, indent=4)
 
-        print("Welcome to our bank")
+        print(f"Welcome to our bank, here is your account number {account_number}")
 
     
     def deposit():
