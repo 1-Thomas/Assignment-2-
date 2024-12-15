@@ -60,6 +60,22 @@ class account:
 
         print(f"Welcome to our bank, here is your account number {account_number}")
 
+    def login():
+        data = "accounts.json"
+        account_number = int(input("Enter your account number (Ensure no letters are inserted): "))
+        password = input("Enter your password: ")
+
+    
+        with open(data, "r") as file:
+            accounts = json.load(file)
+
+
+        for i in range(len(accounts)):
+            if accounts[i]["account_number"] == account_number and accounts[i]["password"] == password:
+                print("Login successful!")
+            else:
+                print("Invalid password or no account under this number")
+    
     
     def deposit():
         print("1")
