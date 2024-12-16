@@ -1,12 +1,86 @@
 [
     {
-        "account_number": 161856,
-        "first name": "Thomas",
-        "last name": "Pearson",
-        "address": "20 Brambleside",
-        "contact_info": "07368914335",
-        "account_type": "savings",
-        "password": "a",
-        "balance": 10.0
+        "customer": [
+            {
+                "customer_id": 1,
+                "first_name": "c",
+                "last_name": "c",
+                "address": "c",
+                "contact_info": "c",
+                "password": "c",
+                "accounts": [
+                    {
+                        "account_number": 120688,
+                        "account_type": "current",
+                        "customer_id": 1,
+                        "balance": 80.0,
+                        "password": "c"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "customer": [
+            {
+                "customer_id": 2,
+                "first_name": "w",
+                "last_name": "w",
+                "address": "w",
+                "contact_info": "w",
+                "password": "w",
+                "accounts": [
+                    {
+                        "account_number": 120527,
+                        "account_type": "current",
+                        "customer_id": 2,
+                        "balance": 35.0,
+                        "password": "w"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "customer": [
+            {
+                "customer_id": 3,
+                "first_name": "a",
+                "last_name": "a",
+                "address": "a",
+                "contact_info": "a",
+                "password": "a",
+                "accounts": [
+                    {
+                        "account_number": 185921,
+                        "account_type": "savings",
+                        "customer_id": 3,
+                        "balance": 60.0,
+                        "password": "a"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "customer": [
+            {
+                "customer_id": 4,
+                "first_name": "a",
+                "last_name": "a",
+                "address": "a",
+                "contact_info": "a",
+                "password": "a",
+                "accounts": [
+                    {
+                        "account_number": 137206,
+                        "account_type": "savings",
+                        "customer_id": 4,
+                        "balance": 60.0,
+                        "password": "a"
+                    }
+                ]
+            }
+        ]
     }
 ]
