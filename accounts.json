@@ -3,18 +3,39 @@
         "customer": [
             {
                 "customer_id": 1,
-                "first_name": "c",
-                "last_name": "c",
-                "address": "c",
-                "contact_info": "c",
-                "password": "c",
+                "first_name": "a",
+                "last_name": "a",
+                "address": "a",
+                "contact_info": "a",
+                "password": "a",
                 "accounts": [
                     {
-                        "account_number": 120688,
-                        "account_type": "current",
+                        "account_number": 179940,
+                        "account_type": "Savings",
                         "customer_id": 1,
-                        "balance": 80.0,
-                        "password": "c"
+                        "password": "a",
+                        "balance": 2067.0
+                    },
+                    {
+                        "account_number": 175336,
+                        "account_type": "Current",
+                        "customer_id": 1,
+                        "password": "a",
+                        "balance": 1000.0
+                    },
+                    {
+                        "account_number": 111724,
+                        "account_type": "Mortgage",
+                        "customer_id": 1,
+                        "password": "a",
+                        "balance": 3.0
+                    },
+                    {
+                        "account_number": 103326,
+                        "account_type": "Current",
+                        "customer_id": 1,
+                        "password": "a",
+                        "balance": 333.0
                     }
                 ]
             }
@@ -24,18 +45,18 @@
         "customer": [
             {
                 "customer_id": 2,
-                "first_name": "w",
-                "last_name": "w",
-                "address": "w",
-                "contact_info": "w",
-                "password": "w",
+                "first_name": "b",
+                "last_name": "b",
+                "address": "b",
+                "contact_info": "b",
+                "password": "b",
                 "accounts": [
                     {
-                        "account_number": 120527,
-                        "account_type": "current",
+                        "account_number": 104260,
+                        "account_type": "Savings",
                         "customer_id": 2,
-                        "balance": 35.0,
-                        "password": "w"
+                        "password": "b",
+                        "balance": 652.0
                     }
                 ]
             }
@@ -52,32 +73,18 @@
                 "password": "a",
                 "accounts": [
                     {
-                        "account_number": 185921,
-                        "account_type": "savings",
+                        "account_number": 104529,
+                        "account_type": "Savings",
                         "customer_id": 3,
-                        "balance": 60.0,
-                        "password": "a"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "customer": [
-            {
-                "customer_id": 4,
-                "first_name": "a",
-                "last_name": "a",
-                "address": "a",
-                "contact_info": "a",
-                "password": "a",
-                "accounts": [
+                        "password": "a",
+                        "balance": 47.0
+                    },
                     {
-                        "account_number": 137206,
-                        "account_type": "savings",
-                        "customer_id": 4,
-                        "balance": 60.0,
-                        "password": "a"
+                        "account_number": 105529,
+                        "account_type": "Savings",
+                        "customer_id": 3,
+                        "password": "a",
+                        "balance": 1000.0
                     }
                 ]
             }

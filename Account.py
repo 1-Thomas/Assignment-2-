@@ -2,7 +2,7 @@ import json
 import random
 
 class account:
-    def __init__(self, account_number, account_type, customer_id, balance):
+    def __init__(self, account_number, account_type, customer_id, balance = 0.0):
         self.account_number = account_number
         self.account_type = account_type
         self.customer_id = customer_id
@@ -21,16 +21,26 @@ class account:
 
         for i in range(len(accounts)):
             if "customer" in accounts[i]:
-                for customer in accounts[i]["customer"]:
-                    for acc in customer["accounts"]:
+                for customer_data in accounts[i]["customer"]:
+                    for acc in customer_data["accounts"]:
                         if acc["account_number"] == account_number and acc["password"] == password:
-                            Customer.view_accounts(customer)
-                            return Customer
+                            customer = Customer(
+                                customer_id=customer_data["customer_id"],
+                                fname=customer_data["first_name"],
+                                lname=customer_data["last_name"],
+                                address=customer_data["address"],
+                                contact_info=customer_data["contact_info"],
+                                password=customer_data["password"],
+                            )
+                            customer.accounts = customer_data["accounts"]
+                            Customer.accounts_dashboard(customer)
+                            return
                         else:
                             print("Invalid password or account try again")
 
                 
     
+
     def deposit():
         account_number = int(input("Enter the account number for deposit: "))
         amount = float(input("Enter the amount to deposit: "))
@@ -49,7 +59,6 @@ class account:
                                 file.truncate()
                                 return
         print("Account not found.")
-
     def withdraw():
         account_number = int(input("Enter the account number for withdrawal: "))
         amount = float(input("Enter the amount to withdraw: "))

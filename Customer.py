@@ -14,18 +14,34 @@ class Customer:
         self.accounts = []
 
     def create_account(self):
-        print(f"Welcome to the bank  {self.fname}!")
-        account_type = input("What are you using the account for savings, current or mortgage: ")
+        print(f"Welcome to the bank!")
+        print("1. Savings")
+        print("2. Current")
+        print("3. Mortgage")
+        while True:
+            account_type_choice = input("Please insert a number to select an account type: ")
+            if account_type_choice == "1":
+                account_type = "Savings"
+                break
+            elif account_type_choice == "2":
+                account_type = "Current"
+                break
+            elif account_type_choice == "3":
+                account_type = "Mortgage"
+                break
+            else:
+                print("Invalid Syntax")
 
-        balance = float(input("How much would you like to deposit into th account?"))
+        balance = float(input("How much would you like to deposit into the account?"))
         account_number = random.randint(100000, 200000)
+
 
         new_account = {
             "account_number": account_number,
             "account_type": account_type,
             "customer_id": self.customer_id,
+            "password": self.password,
             "balance": balance,
-            "password": self.password
         }
        
         self.accounts.append(new_account)
@@ -46,7 +62,7 @@ class Customer:
         print(f"Welcome to our bank here is your account number {account_number}")
 
 
-    def view_accounts(self):
+    def accounts_dashboard(self):
         print(f"Welcome to our bank!")
         while True:
             print("1. View Accounts")
@@ -57,18 +73,15 @@ class Customer:
             print("6. Logout")
             sel = input("Enter your choice: ")
             if sel == "1":
-                with open("accounts.json", "r") as file:
-                    data = json.load(file)
-                for record in data:
-                    if "customer" in record:
-                        for customer in record["customer"]:
-                            if customer["customer_id"] == customer["customer_id"]:
-                                for acc in customer["accounts"]:
-                                    print(f"Account Number: {acc['account_number']}, Account Type: {acc['account_type']}, Balance: £{acc['balance']}")
+                for acc in self.accounts:
+                    print(f"Account Number: {acc['account_number']}, "
+                        f"Account Type: {acc['account_type']}, "
+                        f"Balance: £{acc['balance']}")
+
 
             elif sel == "2":
-                self.create_account()
-            
+                Customer.create_account(self)
+        
             elif sel == "3":
                 account.deposit()
             elif sel == "4":
@@ -94,3 +107,17 @@ class Customer:
                         for acc in customer["accounts"]:
                             next_id = max(next_id, acc["customer_id"] + 1)
             return next_id 
+        
+    def retrieve_account_info():
+        account_number = int(input("Enter the account number: "))
+        file_name = "accounts.json"
+        
+        with open(file_name, "r") as file:
+            accounts_data = json.load(file)
+            for record in accounts_data:
+                if "customer" in record:
+                    for customer in record["customer"]:
+                        for acc in customer["accounts"]:
+                            if acc["account_number"] == account_number:
+                                print(f"Account Information:\nCustomer Name: {customer['first_name']} {customer['last_name']}\nAccount Type: {acc['account_type']}")
+                                return
