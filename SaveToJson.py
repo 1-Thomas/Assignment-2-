@@ -12,7 +12,6 @@ class SaveToJson:
             if "customer" in record:
                 for customer in record["customer"]:
                     if customer["customer_id"] == customer_id:
-                        # Update the customer's accounts
                         customer["accounts"] = data["customer"][0]["accounts"]
                         customer_found = True
                         break

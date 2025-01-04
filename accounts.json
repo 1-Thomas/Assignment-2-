@@ -1,71 +1,42 @@
 [
     {
-        "customer": [
+        "customer_id": 1,
+        "first_name": "aa",
+        "last_name": "aa",
+        "address": "a",
+        "contact_info": "a",
+        "password": "a",
+        "accounts": [
             {
+                "account_number": 100001,
+                "account_type": "Mortgage",
                 "customer_id": 1,
-                "first_name": "a",
-                "last_name": "a",
-                "address": "a",
-                "contact_info": "a",
                 "password": "a",
-                "accounts": [
-                    {
-                        "account_number": 179940,
-                        "account_type": "Savings",
-                        "customer_id": 1,
-                        "password": "a",
-                        "balance": 2067.0
-                    },
-                    {
-                        "account_number": 175336,
-                        "account_type": "Current",
-                        "customer_id": 1,
-                        "password": "a",
-                        "balance": 1000.0
-                    },
-                    {
-                        "account_number": 111724,
-                        "account_type": "Mortgage",
-                        "customer_id": 1,
-                        "password": "a",
-                        "balance": 3.0
-                    },
-                    {
-                        "account_number": 103326,
-                        "account_type": "Current",
-                        "customer_id": 1,
-                        "password": "a",
-                        "balance": 333.0
-                    }
-                ]
+                "balance": 100.0
             }
         ]
     },
     {
-        "customer": [
+        "customer_id": 3,
+        "first_name": "a",
+        "last_name": "a",
+        "address": "a",
+        "contact_info": "a",
+        "password": "a",
+        "accounts": [
             {
-                "customer_id": 2,
-                "first_name": "b",
-                "last_name": "b",
-                "address": "b",
-                "contact_info": "b",
-                "password": "b",
-                "accounts": [
-                    {
-                        "account_number": 104260,
-                        "account_type": "Savings",
-                        "customer_id": 2,
-                        "password": "b",
-                        "balance": 652.0
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "customer": [
-            {
+                "account_number": 192805,
+                "account_type": "Savings",
                 "customer_id": 3,
+                "password": "a",
+                "balance": 1.0
+            }
+        ]
+    },
+    {
+        "customer": [
+            {
+                "customer_id": 4,
                 "first_name": "a",
                 "last_name": "a",
                 "address": "a",
@@ -73,18 +44,53 @@
                 "password": "a",
                 "accounts": [
                     {
-                        "account_number": 104529,
-                        "account_type": "Savings",
-                        "customer_id": 3,
+                        "account_number": 147055,
+                        "account_type": "Current",
+                        "customer_id": 4,
                         "password": "a",
-                        "balance": 47.0
+                        "balance": 60.0
                     },
                     {
-                        "account_number": 105529,
+                        "account_number": 111099,
                         "account_type": "Savings",
-                        "customer_id": 3,
+                        "customer_id": 4,
                         "password": "a",
-                        "balance": 1000.0
+                        "balance": 75.0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "customer": [
+            {
+                "customer_id": 5,
+                "first_name": "John",
+                "last_name": "Ford",
+                "address": "a",
+                "contact_info": "a",
+                "password": "a",
+                "accounts": [
+                    {
+                        "account_number": 190822,
+                        "account_type": "Current",
+                        "customer_id": 5,
+                        "password": "a",
+                        "balance": 21731.0
+                    },
+                    {
+                        "account_number": 134791,
+                        "account_type": "Savings",
+                        "customer_id": 5,
+                        "password": "a",
+                        "balance": 75.0
+                    },
+                    {
+                        "account_number": 150661,
+                        "account_type": "Current",
+                        "customer_id": 5,
+                        "password": "a",
+                        "balance": 110.0
                     }
                 ]
             }
